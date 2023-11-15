@@ -27,7 +27,7 @@ echo "SQL Query: $sql";
 
 if ($conn->query($sql) === TRUE) {
     echo "Form data inserted successfully!";
-    header("index.html")
+    header("index.html");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
