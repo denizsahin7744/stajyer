@@ -3,8 +3,8 @@
 var_dump($_POST);
 
 $servername = "localhost";
-$username = "dashein1_Deniz";
-$password = "BTdz1453.";
+$username = "";
+$password = "";
 $database = "dashein1_job_api";
 
 $conn = new mysqli($servername, $username, $password, $database);
