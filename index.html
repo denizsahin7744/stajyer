@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İşyeri Bilgi Formu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>İşyeri Bilgi Formu</h2>
+        <form>
+            <div class="form-group">
+                <label for="isyeriAdi">İşyeri Adı:</label>
+                <input type="text" class="form-control" id="isyeriAdi" placeholder="İşyeri Adı">
+            </div>
+            <div class="form-group">
+                <label for="isyeriAdresi">İşyeri Adresi:</label>
+                <input type="text" class="form-control" id="isyeriAdresi" placeholder="İşyeri Adresi">
+            </div>
+            <div class="form-group">
+                <label for="telefonNumarasi">Telefon Numarası:</label>
+                <input type="tel" class="form-control" id="telefonNumarasi" placeholder="Telefon Numarası">
+            </div>
+            <div class="form-group">
+                <label for="ilce">İlçe:</label>
+                <input type="text" class="form-control" id="ilce" placeholder="İlçe">
+            </div>
+            <div class="form-group">
+                <label for="ogrenciBolumu">İstenilen Öğrenci Bölümü:</label>
+                <select class="form-control" id="ogrenciBolumu">
+                    <option selected disabled>Bölüm Seçiniz</option>
+                    <option value="Muhasebe">Muhasebe</option>
+                    <option value="Bilişim">Bilişim</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ogrenciSayisi">İstenilen Öğrenci Sayısı:</label>
+                <input type="number" class="form-control" id="ogrenciSayisi" placeholder="İstenilen Öğrenci Sayısı">
+            </div>
+            <div class="form-group">
+                <label for="cinsiyet">İstenilen Öğrenci Cinsiyeti:</label>
+                <select class="form-control" id="cinsiyet">
+                    <option selected disabled>Seçiniz</option>
+                    <option value="Erkek">Erkek</option>
+                    <option value="Kadın">Kadın</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="aciklama">Açıklama:</label>
+                <textarea class="form-control" id="aciklama" rows="3" placeholder="Açıklama"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Formu Gönder</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
