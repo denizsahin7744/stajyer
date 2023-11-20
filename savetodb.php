@@ -11,8 +11,8 @@ $howmanystudents = $_POST["howmanystudents"];
 $gender = $_POST["gender"];
 $description = $_POST["description"];
 
-$sql = "INSERT INTO companyform (companyname, companylocation, phone, town, section, howmanystudents, gender, companydescription)
-        VALUES ('$companyname', '$location', '$phone', '$town', '$section', '$howmanystudents', '$gender', '$description')";
+$sql = "INSERT INTO companyform (companyname, companylocation, phone, town, section, howmanyboystudents, howmanygirlstudents, companydescription)
+        VALUES ('$companyname', '$location', '$phone', '$town', '$section', '$howmanyboystudents', '$howmanygirlstudents', '$description')";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");
