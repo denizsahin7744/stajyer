@@ -15,7 +15,7 @@ $sql = "INSERT INTO companyform (companyname, companylocation, phone, town, sect
         VALUES ('$companyname', '$location', '$phone', '$town', '$section', '$howmanystudents', '$gender', '$description')";
 
 if ($conn->query($sql) === TRUE) {
-    header("Location: index.html");
+    header("Location: index.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
